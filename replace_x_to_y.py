@@ -2,7 +2,7 @@ import os
 import re
 
 # === SETTINGS ===
-ROOT_DIR = "/storage/emulated/0/.hidden_files/workspace/web/Knowlet/notes/semester_1"  # Change if needed
+ROOT_DIR = "/storage/emulated/0/Workspace /.hidden_workspace/web/Knowlet/notes/semester_1"  # Change if needed
 
 # === REGEX PATTERN ===
 # Removes everything between <head> and <meta charset="UTF-8">

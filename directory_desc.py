@@ -9,7 +9,7 @@ paper = 0
 subject = 0
 semester = 0
 
-rd = '/storage/emulated/0/.hidden_files/workspace/web/Knowlet/notes'
+rd = '/storage/emulated/0/.hidden_workspace/web/Knowlet/notes'
 
 for root, _, files in os.walk(rd):
   for filename in files:

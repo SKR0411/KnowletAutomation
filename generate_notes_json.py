@@ -2,8 +2,8 @@ import os
 import json
 import re
 
-ROOT_DIR = "/storage/emulated/0/.hidden_files/workspace/web/knowlet/notes"   # folder where your HTML files are stored
-OUTPUT_FILE = "/storage/emulated/0/.hidden_files/workspace/web/knowlet/notes.json"
+ROOT_DIR = "/storage/emulated/0/.hidden_workspace/web/knowlet/notes"   # folder where your HTML files are stored
+OUTPUT_FILE = "/storage/emulated/0/.hidden_workspace/web/knowlet/assets/notes.json"
 
 notes = []
 total = 0
@@ -14,8 +14,7 @@ h1_pattern = re.compile(r"<h1[^>]*>(.*?)</h1>", re.IGNORECASE | re.DOTALL)
 
 for root, _, files in os.walk(ROOT_DIR):
   for file in files:
-    if file.endswith(".html"):
-      if re.match(r"unit_(\d+)\.html", file):
+    if re.match(r"unit_(\d+)\.html", file):
       path = os.path.join(root, file)
 
       with open(path, "r", encoding="utf-8", errors="ignore") as f:
@@ -43,4 +42,4 @@ for root, _, files in os.walk(ROOT_DIR):
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
   json.dump(notes, f, indent=2, ensure_ascii=False)
 
-print(f"{OUTPUT_FILE} Generated ✅ With {len(notes)} notes.")
+print(f"{OUTPUT_FILE} Generated ✔️ With {len(notes)} notes.")

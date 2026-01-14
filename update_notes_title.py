@@ -1,7 +1,7 @@
 import os
 import re
 
-FOLDER_PATH = "/storage/emulated/0/.hidden_files/workspace/web/knowlet/notes"  # Change this to your folder containing HTML files
+FOLDER_PATH = "/storage/emulated/0/.hidden_workspace/web/knowlet/notes"  # Change this to your folder containing HTML files
 
 def get_semester(course_number):
   """Determine semester based on course code number."""
