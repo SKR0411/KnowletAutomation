@@ -18,7 +18,6 @@ for root, _, files in os.walk(ROOT_DIR):
 				content = r.read()
 			
 			lines = content.splitlines()
-			prev_line = ""
 			line_posn = 0
 			new_content = ""
 			msg = ""
@@ -27,39 +26,31 @@ for root, _, files in os.walk(ROOT_DIR):
 				line_posn += 1
 				new_line = ""
 				
-				if ("<table>" or "<pre>") in line and not(tag in prev_line):
+				if ("<table>" in line and tag + "<table>" not in line) or ("<pre>" in line and tag + "<pre>" not in line) :
+					new_line = line.replace("<table>", tag + "<table>").replace("<pre>", tag + "<pre>")
 					
-					# print("start at: " + str(line_posn))
-					# print(file_path)
+				if ("</table>" in line and "</table></div>" not in line) or ("</pre>" in line and "</pre></div>" not in line) :
+					new_line = line.replace("</table>", "</table></div>").replace("</pre>", "</pre></div>")
 					
-					new_line = line.replace("<table>", tag + "\n" + line).replace("<pre>", tag + "\n" + line)
-					
-				elif ("</table>" or "</pre>") in prev_line and not(prev_line.replace("</table>", "</div>").replace("</pre>", "</div>") in line):
-					
-					# print("end at: " + str(line_posn))
-					# print(file_path)
-					
-					new_line = prev_line.replace("</table>", "</div>\n" + line).replace("</pre>", "</div>\n" + line)
-					
-				else:
-					
+				if not new_line:
 					new_line = line
-					
-				prev_line = line
-				new_content += ("\n" if new_content else "") + new_line
 				
+				new_content += ("\n" if new_content else "") + new_line
+			
 			if new_content != content:
 				with open(file_path, "w") as w:
 					w.write(new_content)
+				
 				msg = "✔️"
 				changed += 1 
+				
 			else:
 				msg = "🟰"
 				unchanged += 1
-				
+			
 			print(msg + "  " + file_path.replace(ROOT_DIR, ""))
 			
 		
-print("total: " + count)
-print("changed: " + changed)
-print("unchanged: " + unchanged)
+print("total: " + str(count))
+print("changed: " + str(changed))
+print("unchanged: " + str(unchanged))

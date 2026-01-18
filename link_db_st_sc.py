@@ -31,9 +31,8 @@ for root, _, files in os.walk(rd):
       #link scripts
       if not '<div id="app"></div>' in c:
         nc = nc.replace('</body>','''<div id="app"></div>
-    <script src="../../../../assets/scripts/units.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="../../../../assets/scripts/supabase.js"></script>
+    <script src="../../../../assets/scripts/units.js"></script>
 </body>
 ''')
         
