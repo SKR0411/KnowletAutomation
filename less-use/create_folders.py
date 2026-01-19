@@ -1,7 +1,7 @@
 import os
 
-rdp = "/storage/emulated/0/Workspace /.hidden_workspace/web/Knowlet_beta/semesters/subjects/papers"
-nrdp =  "/storage/emulated/0/Workspace /.hidden_workspace/web/Knowlet_beta/notes"
+rdp = "/sdcard/.workspace/web/Knowlet_beta/semesters/subjects/papers"
+nrdp =  "/sdcard/.workspace/web/Knowlet_beta/notes"
 
 def get_semester(course_number):
   """Determine semester based on course code number."""

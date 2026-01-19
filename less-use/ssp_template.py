@@ -121,7 +121,7 @@ semtem = '''<!DOCTYPE html>
 </body>
 </html>'''
 
-root_dir = "/storage/emulated/0/workspace/.hidden_workspace/web/knowlet/notes"
+root_dir = "/sdcard/.workspace/web/knowlet/notes"
 unit_pattern = re.compile(r"unit_(\d+)\.html")
 
 

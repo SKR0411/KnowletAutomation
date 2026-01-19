@@ -141,7 +141,7 @@ def clean_latex_math(text):
 
   return re.sub(r'\$(.+?)\$', replace_math, text, flags=re.DOTALL)
 
-FOLDER_PATH = "/storage/emulated/0/Workspace /.hidden_workspace/web/knowlet/notes"
+FOLDER_PATH = "/sdcard/.workspace/web/knowlet/notes"
 
 # --- Process all HTML files ---
 for root, _, files in os.walk(FOLDER_PATH):

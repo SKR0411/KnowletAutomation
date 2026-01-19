@@ -1,6 +1,6 @@
 import os 
 
-ROOT_DIR = "/storage/emulated/0/.hidden_workspace/web/knowlet/notes"
+ROOT_DIR = "/sdcard/.workspace/web/knowlet/notes"
 
 tag = '<div class="add-horizontal-scroll">'
 count = 0

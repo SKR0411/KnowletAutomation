@@ -10,7 +10,7 @@ def replace_custom_spans(text):
   replaced = re.sub(pattern, r'<span id="span_\1">\2</span>', text)
   return replaced
 
-root_dir = '/storage/emulated/0/Workspace /.hidden_workspace/web/knowlet/notes'
+root_dir = '/sdcard/.workspace/web/knowlet/notes'
 # --- Run on all HTML files in current folder ---
 for root, _, files in os.walk(root_dir):
   for filename in files:

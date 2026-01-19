@@ -1,7 +1,7 @@
 import os
 import re
 
-BASE_DIR = "/storage/emulated/0/Workspace /.hidden_workspace/web/Knowlet/notes/semester_1"  # Folder containing all your HTML files
+BASE_DIR = "/sdcard/.workspace/web/Knowlet/notes/semester_1"  # Folder containing all your HTML files
 sf = 0
 uf = 0
 nf = 0

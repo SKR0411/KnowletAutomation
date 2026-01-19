@@ -1,7 +1,7 @@
 import os
 import re
 
-FOLDER_PATH = "/storage/emulated/0/Workspace /.hidden_workspace/web/knowlet/notes"
+FOLDER_PATH = "/sdcard/.workspace/web/knowlet/notes"
 status = ""
 Total = 0
 Correct = 0

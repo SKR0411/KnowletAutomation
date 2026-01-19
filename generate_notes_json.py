@@ -2,8 +2,8 @@ import os
 import json
 import re
 
-ROOT_DIR = "/storage/emulated/0/.hidden_workspace/web/knowlet/notes"   # folder where your HTML files are stored
-OUTPUT_FILE = "/storage/emulated/0/.hidden_workspace/web/knowlet/assets/notes.json"
+ROOT_DIR = "/sdcard/.workspace/web/knowlet/notes"   # folder where your HTML files are stored
+OUTPUT_FILE = "/sdcard/.workspace/web/knowlet/assets/notes.json"
 
 notes = []
 total = 0

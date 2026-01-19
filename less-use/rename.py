@@ -2,7 +2,7 @@ import os
 import re
 
 # Folder path containing the HTML files
-folder_path = "/storage/emulated/0/Workspace /.hidden_workspace/web/knowlet/"
+folder_path = "/sdcard/.workspace/web/knowlet/"
 
 # Loop through all files in the folder
 for filename in os.listdir(folder_path):

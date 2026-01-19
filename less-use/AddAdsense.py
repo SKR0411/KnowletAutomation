@@ -7,7 +7,7 @@ first = '''
 </head>
 '''
 
-root_dir = '/storage/emulated/0/Workspace/.hidden_workspace/web/knowlet'
+root_dir = '/sdcard/.workspace/web/knowlet'
 # --- Run on all HTML files in current folder ---
 for root, _, files in os.walk(root_dir):
   for filename in files:

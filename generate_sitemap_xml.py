@@ -3,7 +3,7 @@ from datetime import datetime
 
 # === SETTINGS ===
 BASE_URL = "https://knowlet.in"    # Change this to your site’s base URL
-ROOT_DIR = "/storage/emulated/0/.hidden_workspace/web/knowlet"    # Folder where your HTML files are located
+ROOT_DIR = "/sdcard/.workspace/web/knowlet"    # Folder where your HTML files are located
 OUTPUT_FILE = ROOT_DIR + "/sitemap.xml"
 
 # === FUNCTION TO GENERATE SITEMAP ===

@@ -1,7 +1,7 @@
 import os
 import re
 
-folder_path = "/storage/emulated/0/Workspace /.hidden_workspace/web/Knowlet/notes"
+folder_path = "/sdcard/.workspace/web/Knowlet/notes"
 total = 0
 for root, _, files in os.walk(folder_path):
   for filename in files:
