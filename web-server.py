@@ -44,7 +44,7 @@ if not os.path.isdir(project_path):
 
 project_path = os.path.abspath(project_path)
 
-PORT = 3000
+PORT = 5000
 HOST = "0.0.0.0"
 
 handler = lambda *args, **kwargs: HtmlFallbackHandler(
